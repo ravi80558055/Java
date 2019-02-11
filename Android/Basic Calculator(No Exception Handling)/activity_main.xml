@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/n1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:contentDescription="First Number"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/n2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:contentDescription="Second Number"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp">
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="add"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:text="-"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="sub"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:text="*"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="mul"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:text="/"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="div"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

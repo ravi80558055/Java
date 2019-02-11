@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---Add to Cart---"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/burger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Burger"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/pizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Pizza"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/breadRoll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Bread Roll"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/vegRoll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Veg Roll"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/momos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Momos"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/paratha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Paratha"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/samosa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Samosa"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/golgappa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Golgappa"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/alooTikki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Aloo Tikki"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/chaat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Chaat"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/fruitSalad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Fruit Salad"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Add to Cart"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:onClick="addToCart"/>
+
+</LinearLayout>
